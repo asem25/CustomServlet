@@ -25,7 +25,7 @@ public class CustomServletTest {
 
     @BeforeEach
      void setUp(){
-        List<String> strings = List.of("List");
+        List<String> strings = new ArrayList<>(Collections.singleton("List"));
         customServlet = new CustomServlet(strings);
         request = mock(HttpServletRequest.class);
         response = mock(HttpServletResponse.class);

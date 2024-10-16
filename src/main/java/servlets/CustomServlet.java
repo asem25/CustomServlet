@@ -41,10 +41,8 @@ public class CustomServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
 
         String param = req.getParameter("param");
-
-
+        strings.add(param);
 
         out.println("Parameter: " + param);
-
     }
 }
